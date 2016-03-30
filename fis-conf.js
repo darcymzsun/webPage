@@ -5,13 +5,8 @@ fis.hook('relative');
 fis.match('**.less', {
     parser: fis.plugin('less'), // invoke `fis-parser-less`,
     rExt: '.css',
-    useHash: true
 });
 
-// 加 md5
-fis.match('*.{js,css,png}', {
-  useHash: true
-});
 
 // 启用 fis-spriter-csssprites 插件
 fis.match('::package', {
